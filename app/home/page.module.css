@@ -1,0 +1,52 @@
+.main {
+  min-height: 100vh;
+  background-color: #fea600;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.watch {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.main .counter h1 {
+  font-size: 80px;
+  color: white;
+}
+
+.main .buttons {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.main .buttons button {
+  height: 50px;
+  width: 30%;
+  background-color: transparent;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: .4s;
+}
+
+.main .buttons button:hover {
+  background-color: #c78100;
+} 
+
+.main .buttons button h3 {
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+}
