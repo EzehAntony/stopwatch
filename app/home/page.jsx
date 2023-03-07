@@ -6,7 +6,7 @@ import styles from "./page.module.css";
 import { Poppins } from "@next/font/google";
 import { useRouter } from "next/navigation";
 import { useState, useEffect, useRef } from "react";
-
+import Snowfall from "react-snowfall";
 const inter = Inter({ subsets: ["latin"] });
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -97,6 +97,7 @@ export default function Home() {
           <h3 className={poppins.className}>Reset</h3>
         </button>
       </div>
+      <Snowfall />
     </main>
   );
 }
