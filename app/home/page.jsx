@@ -49,7 +49,7 @@ export default function Home() {
     setHour(0);
   };
 
-  //updates minute when second timer gets to 60
+  //updates minute when second timer gets to 60 seconds
   useEffect(() => {
     if (second == 60) {
       setMinute((minute) => minute + 1);
@@ -58,7 +58,7 @@ export default function Home() {
     }
   }, [second]);
 
-  //updates hour when minute timer gets to 60
+  //updates hour when minute timer gets to 60 minute
   useEffect(() => {
     if (minute == 60) {
       setHour((hour) => hour + 1);
@@ -67,7 +67,7 @@ export default function Home() {
     }
   }, [minute]);
 
-  //resets timer when hour gets to 24
+  //resets timer when hour gets to 24 hours
   useEffect(() => {
     if (hour == 24) {
       setHour(0);
